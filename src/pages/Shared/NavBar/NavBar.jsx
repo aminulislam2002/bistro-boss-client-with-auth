@@ -22,6 +22,9 @@ const NavBar = () => {
         <Link to="/order/salad">Order Food</Link>
       </li>
       <li>
+        <Link to="/secret">Secret</Link>
+      </li>
+      <li>
         <Link to="/signUp">Sign Up</Link>
       </li>
       {user ? (
