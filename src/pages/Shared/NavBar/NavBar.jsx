@@ -29,10 +29,11 @@ const NavBar = () => {
       </li>
       {user ? (
         <>
-          <span>{user?.displayName}</span>
           <button onClick={handleLogOut} className="btn btn-ghost">
             LogOut
           </button>
+          <img src={user?.photoURL} className="w-10 h-10 rounded-full mx-3" title={user?.displayName} alt="" />
+          <span className="mt-3">{user?.displayName}</span>
         </>
       ) : (
         <>
